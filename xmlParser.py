@@ -26,6 +26,7 @@ class XMLParser():
                 else:
                     jsonDict[child.tag] = {}
                     self.parseToJson(child, jsonDict[child.tag])
+            jsonDict.update(child.attrib)
 
     def getRoot(self):
         self.jsonObj[self.tree.tag] = {}

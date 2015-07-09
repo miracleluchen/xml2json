@@ -10,4 +10,3 @@ with open('inputs/sample.xml', 'r') as f:
     xml.parseToJson(xml.getRoot())
     print json.dumps(xml.getJson())
 
-Please note that when doing the conversion, the attribute in xml tag will be ignored.
